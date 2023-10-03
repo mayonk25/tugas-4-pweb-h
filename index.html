@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TUGAS 4 PWEB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+</head>
+<style>
+    .container {
+        width: 80%;
+        height: 80%;
+        margin-top: 30px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h3 style="text-align: center;"><i class="fs-2 bi bi-cloud-lightning-rain text-info"></i> Aplikasi Cuaca</h3>
+        <p>Pencarian Kota :</p>
+        <div class="row">
+            <div class="col-md-3">
+                <input type="text" class="input form-control">
+            </div>
+            <div class="col-md-2">
+                <button class="button btn btn-primary"><i class = "bi bi-search"></i></button>
+            </div>
+        </div>
+        <p></p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <i class="fs-1 bi bi-geo-alt-fill text-danger"></i>
+                            </div>
+                            <div class="col mr-2 text-end">
+                                <div>
+                                    <p class="h5 mb-0 font-weight-bold text-gray-800" id="namakota">-</p>
+                                </div>
+                                <div class="text-md font-weight-bold text-secondary mb-1">
+                                    Kota
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <i class="fs-1 bi bi-thermometer-half text-warning"></i>
+                            </div>
+                            <div class="col mr-2 text-end">
+                                <div>
+                                    <p class="h5 mb-0 font-weight-bold text-gray-800" id="suhukota">-</p>
+                                </div>
+                                <div class="text-md font-weight-bold text-secondary mb-1">
+                                    Suhu
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <i class="fs-1 bi bi-cloud-sun-fill text-success"></i>
+                            </div>
+                            <div class="col mr-2 text-end">
+                                <div>
+                                    <p class="h5 mb-0 font-weight-bold text-gray-800" id="cuacakota">-</p>
+                                </div>
+                                <div class="text-md font-weight-bold text-secondary mb-1">
+                                    Cuaca
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+<script src="script.js"></script>
+</html>
